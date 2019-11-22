@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>7.添加阅读量、阅读更多和搜索功能</title>
+    <url>/2019/11/22/7-%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E9%87%8F%E3%80%81%E9%98%85%E8%AF%BB%E6%9B%B4%E5%A4%9A%E5%92%8C%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<h3 id="阅读量"><a href="#阅读量" class="headerlink" title="阅读量"></a>阅读量</h3><p>由于busuanzi(不蒜子)的网址更新,导致了使用Hexo Next主题时统计浏览数失效.</p>
+<p>不蒜子官网:<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">http://ibruce.info/2015/04/04/busuanzi/</a></p>
+<p>解决方法:</p>
+<p>到hexo的themes文件夹下, 进入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\themes\next\layout_third-party\analytics</span><br></pre></td></tr></table></figure>
+
+<p>打开: <code>busuanzi-counter.swig</code></p>
+<p>将</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">src=“https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js”</span><br></pre></td></tr></table></figure>
+
+<p>修改为</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">src=“https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js”</span><br></pre></td></tr></table></figure>
+
+<p>即可.</p>
+<h3 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h3><p>1、在hexo的根目录下执行命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p>2、在根目录下的/theme/next/_config.yml文件中添加配置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
+
+<p>3、在根目录下的/theme/next/_config.yml文件中搜索local_search，将enable改为true：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>阅读量统计问题</title>
+    <url>/2019/11/22/%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>由于busuanzi(不蒜子)的网址更新,导致了使用Hexo Next主题时统计浏览数失效.</p>
+<p>不蒜子官网:<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">http://ibruce.info/2015/04/04/busuanzi/</a></p>
+<p>解决方法:</p>
+<p>到hexo的themes文件夹下, 进入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\themes\next\layout_third-party\analytics</span><br></pre></td></tr></table></figure>
+
+<p>打开: <code>busuanzi-counter.swig</code></p>
+<p>将</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">src=“https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js”</span><br></pre></td></tr></table></figure>
+
+<p>修改为</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">src=“https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js”</span><br></pre></td></tr></table></figure>
+
+<p>即可.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>我的视频测试文章</title>
+    <url>/2019/11/21/%E6%88%91%E7%9A%84%E8%A7%86%E9%A2%91%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h3 id="我的视频测试文章"><a href="#我的视频测试文章" class="headerlink" title="我的视频测试文章"></a>我的视频测试文章</h3><p>代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"></span><br><span class="line">&lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;</span><br><span class="line">    &lt;iframe src=&quot;//player.bilibili.com/player.html?aid=76306723&amp;cid=130524568&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;&gt;</span><br><span class="line">    &lt;/iframe&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=76306723&cid=130524568&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;">
+    </iframe>
+</div>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>Markdown语法介绍</title>
+    <url>/2019/11/09/Markdown%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<p>在前面的课程中，我们已经成功搭建了我们的blog，并将它放到了github通过域名进行访问，今天我们来学习一下如何用Markdown来写文章。</p>
+<p>首先简要介绍一下什么是Markdown：</p>
+<ul>
+<li><p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。</p>
+</li>
+<li><p>Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。</p>
+</li>
+<li><p>Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。</p>
+</li>
+<li><p>Markdown 编写的文档后缀为 <code>.md</code>,  <code>.markdown</code>。</p>
+</li>
+</ul>
+<h3 id="1-Markdown标题"><a href="#1-Markdown标题" class="headerlink" title="1.Markdown标题"></a>1.Markdown标题</h3><p>我们使用<code>#</code>号来标记我们的标题,一共有六级标题,分别对应1到6个<code>#</code>号,如下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+
+<p>对应显示效果如下</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20191108202908903.png" alt="image-20191108202908903"></p>
+<h3 id="2、Markdown段落"><a href="#2、Markdown段落" class="headerlink" title="2、Markdown段落"></a>2、Markdown段落</h3><h4 id="（1）字体"><a href="#（1）字体" class="headerlink" title="（1）字体"></a>（1）字体</h4><p>Markdown支持显示以下几种字体</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">*斜体文本*</span><br><span class="line">_斜体文本_</span><br><span class="line">**粗体文本**</span><br><span class="line">__粗体文本__</span><br><span class="line">***粗斜体文本***</span><br><span class="line">___粗斜体文本___</span><br></pre></td></tr></table></figure>
+
+<p>对应显示效果如下：</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20191108203410562.png" alt="image-20191108203410562"></p>
+<h4 id="（2）分隔线"><a href="#（2）分隔线" class="headerlink" title="（2）分隔线"></a>（2）分隔线</h4><p>我们使用三个以上减号来建立分隔线</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">------ 分隔线</span><br></pre></td></tr></table></figure>
+<p>显示效果如下</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20191108203745695.png" alt="image-20191108203745695"></p>
+<h4 id="（3）删除线"><a href="#（3）删除线" class="headerlink" title="（3）删除线"></a>（3）删除线</h4><p>删除线只需要在文字两端加上双波浪线即可~~</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~~HELLO~~</span><br></pre></td></tr></table></figure>
+<p>显示效果如下<br><del>HELLO</del></p>
+<h4 id="（4）下划线"><a href="#（4）下划线" class="headerlink" title="（4）下划线"></a>（4）下划线</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;u&gt;下划线&lt;/u&gt;</span><br></pre></td></tr></table></figure>
+<p>显示效果如下</p>
+<p><u>下划线</u></p>
+<h3 id="3、Markdown列表"><a href="#3、Markdown列表" class="headerlink" title="3、Markdown列表"></a>3、Markdown列表</h3><p>列表分为有序列表和无序列表</p>
+<h4 id="1、无序列表如下所示（注意后面加一个空格）"><a href="#1、无序列表如下所示（注意后面加一个空格）" class="headerlink" title="1、无序列表如下所示（注意后面加一个空格）"></a>1、无序列表如下所示（注意后面加一个空格）</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">- 第一项</span><br><span class="line">- 第二项</span><br><span class="line">- 第三项</span><br></pre></td></tr></table></figure>
+<p>显示效果如下</p>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<h4 id="2、有序列表如下所示（注意后面加一个空格）"><a href="#2、有序列表如下所示（注意后面加一个空格）" class="headerlink" title="2、有序列表如下所示（注意后面加一个空格）"></a>2、有序列表如下所示（注意后面加一个空格）</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 第一项</span><br><span class="line">2. 第二项</span><br><span class="line">3. 第三项</span><br></pre></td></tr></table></figure>
+<p>显示效果如下</p>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+<h4 id="3、列表嵌套用法"><a href="#3、列表嵌套用法" class="headerlink" title="3、列表嵌套用法"></a>3、列表嵌套用法</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 第一项：</span><br><span class="line">    - 第一项嵌套的第一个元素</span><br><span class="line">    - 第一项嵌套的第二个元素</span><br><span class="line">2. 第二项：</span><br><span class="line">    - 第二项嵌套的第一个元素</span><br><span class="line">    - 第二项嵌套的第二个元素</span><br></pre></td></tr></table></figure>
+<p>显示效果如下</p>
+<ol>
+<li>第一项：<ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第二项：<ul>
+<li>第二项嵌套的第一个元素</li>
+<li>第二项嵌套的第二个元素</li>
+</ul>
+</li>
+</ol>
+<h3 id="4、Markdown引用"><a href="#4、Markdown引用" class="headerlink" title="4、Markdown引用"></a>4、Markdown引用</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 引用的一段话，这里演示用。</span><br></pre></td></tr></table></figure>
+<p>显示效果如下</p>
+<blockquote>
+<p>引用的一段话，这里演示用。</p>
+</blockquote>
+<h3 id="5、Markdown代码"><a href="#5、Markdown代码" class="headerlink" title="5、Markdown代码"></a>5、Markdown代码</h3><h4 id="（1）、代码"><a href="#（1）、代码" class="headerlink" title="（1）、代码"></a>（1）、代码</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">`printf()`</span><br></pre></td></tr></table></figure>
+<p>显示效果如下<br><code>printf()</code></p>
+<h4 id="（2）、代码段"><a href="#（2）、代码段" class="headerlink" title="（2）、代码段"></a>（2）、代码段</h4><p>输入如下：</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20191108210014315.png" alt="image-20191108210014315"></p>
+<p>显示效果如下：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"Hello world!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="6、Markdown链接"><a href="#6、Markdown链接" class="headerlink" title="6、Markdown链接"></a>6、Markdown链接</h3><p>如下所示输入超链接</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[百度](https://www.baidu.com)</span><br></pre></td></tr></table></figure>
+<p>显示效果如下（可点击跳转百度）<br><a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
+<h3 id="7、Markdown表格"><a href="#7、Markdown表格" class="headerlink" title="7、Markdown表格"></a>7、Markdown表格</h3><p>实例如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+
+<p>显示效果如下：</p>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">居中对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+<h3 id="8、Markdown图片"><a href="#8、Markdown图片" class="headerlink" title="8、Markdown图片"></a>8、Markdown图片</h3><p>插入图片我们需要先上传到图床网站获取链接，然后再插入图片链接，具体操作如下：</p>
+<ol>
+<li><p>我们首先打开网站<a href="https://imgchr.com/" target="_blank" rel="noopener">https://imgchr.com/</a></p>
+</li>
+<li><p>点击开始上传，上传一张我们想要的图</p>
+</li>
+<li><p>上传好了我们找到下面Markdown Code并复制<br> <img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20191108211045231.png" alt="image-20191108211045231"></p>
+</li>
+<li><p>将复制的链接粘贴过来</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[![MZ53S1.md.jpg](https://s2.ax1x.com/2019/11/08/MZ53S1.md.jpg)](https://imgchr.com/i/MZ53S1)</span><br></pre></td></tr></table></figure>
+
+<p>显示成功如下</p>
+<p><a href="https://imgchr.com/i/MZ53S1" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/11/08/MZ53S1.md.jpg" alt="MZ53S1.md.jpg"></a> </p>
+<p>这是一些基本的用法,学会了这些我们就可以写一些基本的文章来记录自己的日常啦<del>~</del></p>
+]]></content>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2019/11/04/hello-world/</url>
+    <content><![CDATA[<p>大家好，这是我的第一个博客，多谢关注！</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Testing</category>
+      </categories>
+  </entry>
+</search>
