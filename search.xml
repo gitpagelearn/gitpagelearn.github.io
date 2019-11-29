@@ -3,7 +3,9 @@
   <entry>
     <title>8、博客主题深度美化</title>
     <url>/2019/11/29/8%E3%80%81%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%B7%B1%E5%BA%A6%E7%BE%8E%E5%8C%96/</url>
-    <content><![CDATA[<h3 id="1、修改作者头像为圆形并旋转"><a href="#1、修改作者头像为圆形并旋转" class="headerlink" title="1、修改作者头像为圆形并旋转"></a>1、修改作者头像为圆形并旋转</h3><p>打开 <code>\themes\next\source\css\_common\components\sidebar\sidebar-author.styl</code>，在里面添加如下代码：</p>
+    <content><![CDATA[<a id="more"></a>
+
+<h3 id="1、修改作者头像为圆形并旋转"><a href="#1、修改作者头像为圆形并旋转" class="headerlink" title="1、修改作者头像为圆形并旋转"></a>1、修改作者头像为圆形并旋转</h3><p>打开 <code>\themes\next\source\css\_common\components\sidebar\sidebar-author.styl</code>，在里面添加如下代码：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.site-author-image &#123;</span><br><span class="line">  display: block;</span><br><span class="line">  margin: 0 auto;</span><br><span class="line">  padding: $site-author-image-padding;</span><br><span class="line">  max-width: $site-author-image-width;</span><br><span class="line">  height: $site-author-image-height;</span><br><span class="line">  border: $site-author-image-border-width solid $site-author-image-border-color;</span><br><span class="line"></span><br><span class="line">  /* 头像圆形 */</span><br><span class="line">  border-radius: 80px;</span><br><span class="line">  -webkit-border-radius: 80px;</span><br><span class="line">  -moz-border-radius: 80px;</span><br><span class="line">  box-shadow: inset 0 -1px 0 #333sf;</span><br><span class="line"></span><br><span class="line">  /* 设置循环动画 [animation: (play)动画名称 (2s)动画播放时长单位秒或微秒 (ase-out)动画播放的速度曲线为以低速结束 </span><br><span class="line">    (1s)等待1秒然后开始动画 (1)动画播放次数(infinite为循环播放) ]*/</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">  /* 鼠标经过头像旋转360度 */</span><br><span class="line">  -webkit-transition: -webkit-transform 1.0s ease-out;</span><br><span class="line">  -moz-transition: -moz-transform 1.0s ease-out;</span><br><span class="line">  transition: transform 1.0s ease-out;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">img:hover &#123;</span><br><span class="line">  /* 鼠标经过停止头像旋转 </span><br><span class="line">  -webkit-animation-play-state:paused;</span><br><span class="line">  animation-play-state:paused;*/</span><br><span class="line"></span><br><span class="line">  /* 鼠标经过头像旋转360度 */</span><br><span class="line">  -webkit-transform: rotateZ(360deg);</span><br><span class="line">  -moz-transform: rotateZ(360deg);</span><br><span class="line">  transform: rotateZ(360deg);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* Z 轴旋转动画 */</span><br><span class="line">@-webkit-keyframes play &#123;</span><br><span class="line">  0% &#123;</span><br><span class="line">    -webkit-transform: rotateZ(0deg);</span><br><span class="line">  &#125;</span><br><span class="line">  100% &#123;</span><br><span class="line">    -webkit-transform: rotateZ(-360deg);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">@-moz-keyframes play &#123;</span><br><span class="line">  0% &#123;</span><br><span class="line">    -moz-transform: rotateZ(0deg);</span><br><span class="line">  &#125;</span><br><span class="line">  100% &#123;</span><br><span class="line">    -moz-transform: rotateZ(-360deg);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes play &#123;</span><br><span class="line">  0% &#123;</span><br><span class="line">    transform: rotateZ(0deg);</span><br><span class="line">  &#125;</span><br><span class="line">  100% &#123;</span><br><span class="line">    transform: rotateZ(-360deg);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="2、"><a href="#2、" class="headerlink" title="2、"></a>2、</h3>]]></content>
@@ -11,7 +13,9 @@
   <entry>
     <title>7.添加阅读量、阅读更多和搜索功能</title>
     <url>/2019/11/22/7-%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E9%87%8F%E3%80%81%E9%98%85%E8%AF%BB%E6%9B%B4%E5%A4%9A%E5%92%8C%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<h3 id="阅读量"><a href="#阅读量" class="headerlink" title="阅读量"></a>阅读量</h3><p>由于busuanzi(不蒜子)的网址更新,导致了使用Hexo Next主题时统计浏览数失效.</p>
+    <content><![CDATA[<a id="more"></a>
+
+<h3 id="阅读量"><a href="#阅读量" class="headerlink" title="阅读量"></a>阅读量</h3><p>由于busuanzi(不蒜子)的网址更新,导致了使用Hexo Next主题时统计浏览数失效.</p>
 <p>不蒜子官网:<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">http://ibruce.info/2015/04/04/busuanzi/</a></p>
 <p>解决方法:</p>
 <p>到hexo的themes文件夹下, 进入</p>
@@ -48,7 +52,9 @@
   <entry>
     <title>阅读量统计问题</title>
     <url>/2019/11/22/%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p>由于busuanzi(不蒜子)的网址更新,导致了使用Hexo Next主题时统计浏览数失效.</p>
+    <content><![CDATA[<a id="more"></a>
+
+<p>由于busuanzi(不蒜子)的网址更新,导致了使用Hexo Next主题时统计浏览数失效.</p>
 <p>不蒜子官网:<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">http://ibruce.info/2015/04/04/busuanzi/</a></p>
 <p>解决方法:</p>
 <p>到hexo的themes文件夹下, 进入</p>
@@ -67,7 +73,9 @@
   <entry>
     <title>我的视频测试文章</title>
     <url>/2019/11/21/%E6%88%91%E7%9A%84%E8%A7%86%E9%A2%91%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h3 id="我的视频测试文章"><a href="#我的视频测试文章" class="headerlink" title="我的视频测试文章"></a>我的视频测试文章</h3><p>代码如下：</p>
+    <content><![CDATA[<a id="more"></a>
+
+<h3 id="我的视频测试文章"><a href="#我的视频测试文章" class="headerlink" title="我的视频测试文章"></a>我的视频测试文章</h3><p>代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"></span><br><span class="line">&lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;</span><br><span class="line">    &lt;iframe src=&quot;//player.bilibili.com/player.html?aid=76306723&amp;cid=130524568&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;&gt;</span><br><span class="line">    &lt;/iframe&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
 
 <p>效果如下：</p>
@@ -83,7 +91,9 @@
   <entry>
     <title>Markdown语法介绍</title>
     <url>/2019/11/09/Markdown%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<p>在前面的课程中，我们已经成功搭建了我们的blog，并将它放到了github通过域名进行访问，今天我们来学习一下如何用Markdown来写文章。</p>
+    <content><![CDATA[<a id="more"></a>
+
+<p>在前面的课程中，我们已经成功搭建了我们的blog，并将它放到了github通过域名进行访问，今天我们来学习一下如何用Markdown来写文章。</p>
 <p>首先简要介绍一下什么是Markdown：</p>
 <ul>
 <li><p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。</p>
@@ -206,7 +216,9 @@
   <entry>
     <title>Hello World</title>
     <url>/2019/11/04/hello-world/</url>
-    <content><![CDATA[<p>大家好，这是我的第一个博客，多谢关注！</p>
+    <content><![CDATA[<a id="more"></a>
+
+<p>大家好，这是我的第一个博客，多谢关注！</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
