@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="Blog">
 <meta property="og:description" content="1、修改作者头像为圆形并旋转打开 \themes\next\source\css\_common\components\sidebar\sidebar-author.styl，在里面添加如下代码：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-29T13:24:39.800Z">
+<meta property="og:updated_time" content="2019-11-29T13:52:24.605Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -387,7 +387,14 @@
 <h3 id="4、添加进度条"><a href="#4、添加进度条" class="headerlink" title="4、添加进度条"></a>4、添加进度条</h3><p>找到<code>peace</code>改为<code>true</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Progress bar in the top during page loading.</span><br><span class="line">pace: true</span><br></pre></td></tr></table></figure>
 
-<h3 id="5、"><a href="#5、" class="headerlink" title="5、"></a>5、</h3>
+<h3 id="5、评论换成valine"><a href="#5、评论换成valine" class="headerlink" title="5、评论换成valine"></a>5、评论换成valine</h3><p>因为来必力太慢了，我们将评论系统换成valine</p>
+<p>网址：<a href="https://leancloud.cn" target="_blank" rel="noopener">https://leancloud.cn</a></p>
+<p>具体操作见视频</p>
+<h3 id="6、添加宠物猫"><a href="#6、添加宠物猫" class="headerlink" title="6、添加宠物猫"></a>6、添加宠物猫</h3><p>在博客目录下安装依赖</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-hijiki</span><br></pre></td></tr></table></figure>
+
+<p>Hexo的 _config.yml 文件添加配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  log: false</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-hijiki</span><br><span class="line">  display:</span><br><span class="line">    position: right</span><br><span class="line">    width: 150</span><br><span class="line">    height: 300</span><br><span class="line">  mobile:</span><br><span class="line">    show: true</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -559,7 +566,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、修改作者头像为圆形并旋转"><span class="nav-number">1.</span> <span class="nav-text">1、修改作者头像为圆形并旋转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、添加背景动画"><span class="nav-number">2.</span> <span class="nav-text">2、添加背景动画</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、主页文章添加阴影效果"><span class="nav-number">3.</span> <span class="nav-text">3、主页文章添加阴影效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、添加进度条"><span class="nav-number">4.</span> <span class="nav-text">4、添加进度条</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、"><span class="nav-number">5.</span> <span class="nav-text">5、</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、修改作者头像为圆形并旋转"><span class="nav-number">1.</span> <span class="nav-text">1、修改作者头像为圆形并旋转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、添加背景动画"><span class="nav-number">2.</span> <span class="nav-text">2、添加背景动画</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、主页文章添加阴影效果"><span class="nav-number">3.</span> <span class="nav-text">3、主页文章添加阴影效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、添加进度条"><span class="nav-number">4.</span> <span class="nav-text">4、添加进度条</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、评论换成valine"><span class="nav-number">5.</span> <span class="nav-text">5、评论换成valine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6、添加宠物猫"><span class="nav-number">6.</span> <span class="nav-text">6、添加宠物猫</span></a></li></ol></div>
             
 
           </div>
@@ -1137,5 +1144,5 @@
 
   
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});</script></body>
 </html>
